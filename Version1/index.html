@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fact-O-Rama </title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="body-Container">
+        <header>
+            <div class="title-Logo">
+                <img src="logo.png" alt="App Logo (Fact-O-Rama)" class="logo" />
+                <h1 class="header-H1">Fact-O-Rama</h1>
+            </div>
+            <button class="btn main-Btn fact-Btn-Open">Share a fact</button>
+        </header>
+
+        <form class="fact-Form hidden" action="">
+            <input type="text" placeholder="Share a fact with us!" />
+            <span class="word-Count-Span">200</span>
+            <input type="text" placeholder="Trustworthy Source " />
+            <select>
+                <option value="" disabled selected>Choose category:</option>
+                <option value="Technology">Technology</option>
+                <option value="News">News</option>
+                <option value="Science">Science</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Society">Society</option>
+                <option value="Finance">Finance</option>
+                <option value="History">History</option>
+                <option value="Health">Health</option>
+            </select>
+            <button class="btn main-Btn">Post</button>
+        </form>
+
+        <main class="main">
+            <aside>
+                <ul>
+                    <li> <button class="btn all-Btn">All</button> </li>
+                    <li class="category"> <button class="btn category-Btn"
+                            style="background-color: #3b82f6">Technology</button></li>
+                    <li class="category"> <button class="btn category-Btn"
+                            style="background-color: #8b5cf6">News</button></li>
+                    <li class="category"> <button class="btn category-Btn"
+                            style="background-color: #16a34a">Science</button></li>
+                    <li class="category"> <button class="btn category-Btn"
+                            style="background-color: #db2777">Entertainment</button></li>
+                    <li class="category"> <button class="btn category-Btn"
+                            style="background-color: #eab308">Society</button></li>
+                    <li class="category"> <button class="btn category-Btn"
+                            style="background-color: #ef4444">Finance</button></li>
+                    <li class="category"> <button class="btn category-Btn"
+                            style="background-color: #f97316">History</button></li>
+                    <li class="category"> <button class="btn category-Btn"
+                            style="background-color: #14b8a6">Health</button></li>
+                </ul>
+
+            </aside>
+            <section>
+                <ul>
+                    <li class="facts-List">
+                        <p>React is being developed by Meta (formerly facebook) <a class="source"
+                                href="https://opensource.fb.com/" target="_blank">(Source)
+                            </a></p>
+                        <span class="technology-Tag-Span">Technology</span>
+                        <div class="voting-Btns">
+                            <button>👍 33</button>
+                            <button>🤯 11</button>
+                            <button>📛 2</button>
+                        </div>
+                    </li>
+
+                    <li class="facts-List">
+                        <p>"Millennial dads spend 3 times as much time with their kids than their fathers
+                            spent with them. In 1982, 43% of fathers had never changed a diaper. Today, that
+                            number is down to 3%" <a class="source"
+                                href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                                target="_blank">(Source)</a> </p>
+                        <span class="society-Tag-Span">Society</span>
+                        <div class="voting-Btns">
+                            <button>👍 33</button>
+                            <button>🤯 11</button>
+                            <button>📛 2</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+
+        </main>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

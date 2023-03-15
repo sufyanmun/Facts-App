@@ -13,6 +13,10 @@ body {
   padding: 48px 64px;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .main {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -39,7 +43,7 @@ header {
 }
 
 .title-Logo:hover {
-  transform: scale(110%) rotate(2deg);
+  transform: scale(110%) rotate(-2deg);
 }
 
 .title-Logo {
@@ -243,5 +247,8 @@ ul {
 @media (max-width: 900px) {
   .main {
     grid-template-columns: 1fr;
+  }
+  .header-H1 {
+    font-size: 32px;
   }
 }
